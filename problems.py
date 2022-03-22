@@ -24,7 +24,8 @@ def largest(nums):
     print("largest ",biggest)
     return biggest
     
-largest([4,56,49,100,29])
+largest([1, 2, 3, 4, 0])  # returns 4
+largest([10, 4, 2, 231, 91, 54])  # returns 231
 
 
 
@@ -32,14 +33,12 @@ largest([4,56,49,100,29])
 
 
 def occurances(one, two):
-    print(one.count(two))
+    print('occurances:',one.count(two))
 
 occurances('fleep floop', 'e')   # returns 2
 occurances('fleep floop', 'p')   # returns 2
 occurances('fleep floop', 'ee')  # returns 1
 occurances('fleep floop', 'fe')  # returns 0
-
-
 
 
 
@@ -52,8 +51,6 @@ def product(*args):
     print(f"sum: {sum}")
     return sum
     
-        
-
 
 product(-1, 4) # returns -4
 product(2, 5, 5) # returns 50
